@@ -1,4 +1,9 @@
 .login_wrapper {
     background: url(../images/login_bg.png) center/cover;
     min-height: 100vh;
+    .header{
+        margin-top: 63px;
+        height: 73px;
+        width: 277px;
+    }
 }

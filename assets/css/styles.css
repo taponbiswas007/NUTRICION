@@ -51,4 +51,9 @@ table {
 .login_wrapper {
   background: url(../images/login_bg.png) center/cover;
   min-height: 100vh;
+}
+.login_wrapper .header {
+  margin-top: 63px;
+  height: 73px;
+  width: 277px;
 }/*# sourceMappingURL=styles.css.map */
