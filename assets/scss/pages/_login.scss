@@ -1,6 +1,6 @@
 @import "../utils/variable";
 
-.login_wrapper {
+.auth_wrapper {
     background: url(../images/login_bg.png) center/cover;
     min-height: 100vh;
 
@@ -112,75 +112,218 @@
         font-size: 33px;
         margin-top: 20px;
     }
+
 }
 
 @media (max-width: 768px) {
-    .login_wrapper .spectacledcoder-input input {
+    .auth_wrapper .spectacledcoder-input input {
         height: 114px;
     }
 
-    .login_wrapper .spectacledcoder-input .d-label {
+    .auth_wrapper .spectacledcoder-input .d-label {
         top: 42px;
         left: 20px;
     }
 
-    .login_wrapper .d-label.floating {
+    .auth_wrapper .d-label.floating {
         transform: translateY(-55px) scale(0.9);
         font-size: 24px;
     }
 }
 
 @media (max-width: 576px) {
-    .login_wrapper {
+    .auth_wrapper {
         background: url(../images/login_bg_formobile.png) center/cover;
     }
 
-    .login_wrapper .spectacledcoder-input .d-label {
+    .auth_wrapper .spectacledcoder-input .d-label {
         font-size: 15px;
     }
-.login_wrapper .header {
-  margin-top: 41px;
-  height: 53px;
-  width: 222px;
-}
-   .login_wrapper .d-label.floating {
-    transform: translateY(-45px) scale(0.9);
-  }
 
-    .login_wrapper .authForm button {
+    .auth_wrapper .header {
+        margin-top: 41px;
+        height: 53px;
+        width: 222px;
+    }
+
+    .auth_wrapper .d-label.floating {
+        transform: translateY(-45px) scale(0.9);
+    }
+
+    .auth_wrapper .authForm button {
         font-size: 18px;
         height: 90px;
     }
 
-    .login_wrapper .spectacledcoder-input input {
+    .auth_wrapper .spectacledcoder-input input {
         height: 90px;
     }
 
-    .login_wrapper .spectacledcoder-input .d-label {
+    .auth_wrapper .spectacledcoder-input .d-label {
         top: 38px;
         left: 20px;
     }
 
-    .login_wrapper h1 {
+    .auth_wrapper h1 {
         font-size: 38px;
         margin-top: 61px;
         margin-bottom: 31px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
     }
 
 }
+
 @media (max-width: 376px) {
-  .login_wrapper .spectacledcoder-input input {
-    height: 70px;
+    .auth_wrapper .spectacledcoder-input input {
+        height: 70px;
+    }
+
+    .auth_wrapper .spectacledcoder-input .d-label {
+        font-size: 13px;
+        top: 28px;
+    }
+
+    .auth_wrapper .authForm button {
+        font-size: 24px;
+        height: 93px;
+    }
+
+    .auth_wrapper .d-label.floating {
+        transform: translateY(-34px) scale(0.9);
+    }
+}
+
+.authConfirm_wrapper {
+    background: url(../images/login_bg.png) center/cover;
+    min-height: 100vh;
+
+    .header {
+        height: 73px;
+        width: 277px;
+    }
+
+    .userName {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 40px;
+        text-align: right;
+        margin-left: 160px;
+    }
+    h1{
+       font-family: $montserrat; 
+       color:#E29B1A ;
+       font-size: 72px;
+       text-align: center;
+       margin-top: 81px;
+       margin-bottom: 49px;
+       font-weight: 600;
+       letter-spacing: 7.41px;
+    }
+    p{
+        max-width: 1026px;
+        margin: 0 auto;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 300;
+        line-height: 45px;
+        text-align: center;
+    }
+    button{
+         font-family: $helvetica;
+        color: #ffffff;
+        border: 5px solid #ffffff;
+        border-radius: 31px;
+        height: 128px;
+        max-width: 354px;
+        width: 100%;
+        background: transparent;
+        font-size: 33px;
+        margin-top: 96px;
+        text-transform: uppercase;
+    }
+    a{
+         font-family: $helvetica;
+        color: #ffffff;
+        background: transparent;
+        font-size: 25px;
+        margin-top: 78px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1080px) {
+   .authConfirm_wrapper h1{
+    font-size: 57px;
+   }
+   .authConfirm_wrapper p{
+    font-size: 25px;
+   }
+   .authConfirm_wrapper button{
+    height: 103px;
+   }
+}
+@media (max-width: 992px) {
+    .authConfirm_wrapper .header {
+        margin-top: -19px;
+        height: 50px;
+        width: 240px;
+    }
+}
+@media (max-width: 992px) {
+    .authConfirm_wrapper h1{
+    font-size: 45px;
+    line-height: 55px;
+    text-align: left;
+   }
+   .authConfirm_wrapper p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+   }
+   .authConfirm_wrapper button{
+    height: 103px;
+   }
+}
+
+@media (max-width: 576px) {
+    .authConfirm_wrapper {
+        background: url(../images/login_bg_formobile.png) center/cover;
+    }
+
+    .authConfirm_wrapper .header {
+        height: 38px;
+        width: 128px;
+        margin-top: -25px;
+    }
+
+    .authConfirm_wrapper .userName {
+        font-size: 15px;
+    }
+     .authConfirm_wrapper button {
+   font-size: 18px;
+   height: 80px;
+   margin-top: 33px;
+   max-width: 245px;
+   width: 100%;
   }
-   .login_wrapper .spectacledcoder-input .d-label {
-    font-size: 13px;
-    top: 28px;
+  
+}
+@media (max-width: 481px) {
+    .authConfirm_wrapper h1 {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+    margin-top: 40px;
   }
-    .login_wrapper .authForm button {
-    font-size: 24px;
-    height: 93px;
+  
+}
+@media (max-width: 346px) {
+    .authConfirm_wrapper h1 {
+    font-size: 25px;
+    line-height: 35px;
   }
-    .login_wrapper .d-label.floating {
-    transform: translateY(-34px) scale(0.9);
-  }
+  
 }
