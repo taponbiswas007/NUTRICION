@@ -26,3 +26,23 @@ document.querySelectorAll('.spectacledcoder-input input').forEach(input => {
         checkInput(this.id);
     });
 });
+
+  (function () {
+    const videoModal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoFrame');
+
+    videoModal.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget; // the button that opened the modal
+      const baseUrl = button?.getAttribute('data-video-url') || '';
+      if (!baseUrl) return;
+
+      // Autoplay (muted helps avoid browser autoplay blocks)
+      const url = baseUrl.includes('?') ? baseUrl + '&autoplay=1&mute=1' : baseUrl + '?autoplay=1&mute=1';
+      iframe.src = url;
+    });
+
+    videoModal.addEventListener('hidden.bs.modal', function () {
+      // Stop the video
+      iframe.src = '';
+    });
+  })();

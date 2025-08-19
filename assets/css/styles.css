@@ -53,6 +53,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1650px;
+}
+
 .auth_wrapper {
   background: url(../images/login_bg.png) center/cover;
   min-height: 100vh;
@@ -342,5 +346,291 @@ a {
   .authConfirm_wrapper h1 {
     font-size: 25px;
     line-height: 35px;
+  }
+}
+.header_and_hero {
+  background: url(../images/hero_bg.png) center/cover;
+  min-height: 770px;
+}
+.header_and_hero .logo {
+  width: 109px;
+  display: block;
+}
+.header_and_hero h2 {
+  color: #F7F7F7;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.header_and_hero .hero_main_area {
+  margin-top: 91px;
+}
+.header_and_hero .hero_main_area .hero_content h1 {
+  font-family: "Montserrat";
+  font-size: 81px;
+  line-height: 98px;
+  color: #D78E00;
+  letter-spacing: 13.04px;
+  font-weight: 600;
+}
+.header_and_hero .hero_main_area .hero_content p {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: left;
+  margin-top: 23px;
+  font-weight: 400;
+}
+.header_and_hero .hero_main_area .video_play_area {
+  position: relative;
+  height: 459px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.header_and_hero .hero_main_area .video_play_area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+.header_and_hero .hero_main_area .video_play_area .videoPlaybtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 110px;
+  width: 110px;
+  background: rgba(255, 255, 255, 0.0823529412);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_and_hero .hero_main_area .video_play_area .videoPlaybtn .triangle {
+  display: block;
+  width: 45px;
+  height: 52px;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.header_and_hero .hero_main_area .video_play_area .modal-header {
+  background: #D78E00 !important;
+  border-bottom: 0;
+}
+
+.proximos_eventos_area h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #401675;
+  margin-bottom: 50px;
+}
+.proximos_eventos_area p {
+  max-width: 1026px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+}
+.proximos_eventos_area .card {
+  height: 773px;
+  background: url(../images/card_bg.png) no-repeat center/cover;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 5%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: none;
+}
+.proximos_eventos_area .card .card_effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.proximos_eventos_area .card h1 {
+  font-family: "Helvetica Neue";
+  color: #e29b1b;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.proximos_eventos_area .card p {
+  font-size: 40px;
+  line-height: 55px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+.proximos_eventos_area .de_cart {
+  background: url(../images/deactiveCartbg.png) no-repeat center/cover;
+  padding-bottom: 150px;
+}
+.proximos_eventos_area .de_cart h1 {
+  opacity: 0.8;
+}
+.proximos_eventos_area .de_cart p {
+  opacity: 0.8;
+}
+.proximos_eventos_area .cart_footer {
+  padding-top: 30px;
+}
+.proximos_eventos_area .cart_footer h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+.proximos_eventos_area .cart_footer .statuscomplete p {
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+.proximos_eventos_area .cart_footer .statuscomplete span {
+  height: 36px;
+  width: 36px;
+  display: block;
+}
+.proximos_eventos_area .cart_footer .statusInprogress p {
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+.proximos_eventos_area .cart_footer .statusInprogress span {
+  height: 22px;
+  width: 22px;
+  display: block;
+}
+.proximos_eventos_area .cart_footer .statusupcomming p {
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+.proximos_eventos_area .cart_footer .statusupcomming span {
+  height: 22px;
+  width: 22px;
+  display: block;
+}
+.proximos_eventos_area .cart_footer .statusIncomplete p {
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+.proximos_eventos_area .cart_footer .statusIncomplete span {
+  height: 22px;
+  width: 22px;
+  display: block;
+}
+.proximos_eventos_area .message h2 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  max-width: 368px;
+  width: 100%;
+}
+
+.footer {
+  background: url(../images/footer_bg.png) no-repeat center/cover;
+  width: 100%;
+  height: 255px;
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.footer img {
+  max-width: 213px;
+  width: 100%;
+}
+.footer p {
+  color: #F7F7F7;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 4.51px;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .header_and_hero .hero_main_area .hero_content h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .header_and_hero .hero_main_area .hero_content p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .header_and_hero {
+    background: url(../images/mobile_hero_bg.png) center/cover;
+  }
+  .header_and_hero .hero_main_area .video_play_area {
+    height: 218px;
+  }
+  .header_and_hero .hero_main_area .video_play_area .videoPlaybtn {
+    height: 68px;
+    width: 68px;
+  }
+  .header_and_hero .hero_main_area .video_play_area .videoPlaybtn .triangle {
+    height: 28px;
+    width: 22px;
+  }
+  .header_and_hero .hero_main_area .hero_content h1 {
+    font-size: 45px;
+  }
+  .header_and_hero .hero_main_area .hero_content p {
+    font-size: 17px;
+    line-height: 40px;
+  }
+  .proximos_eventos_area .card {
+    height: 690px;
+  }
+  .proximos_eventos_area h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .header_and_hero .hero_main_area .hero_content h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .header_and_hero .hero_main_area .hero_content p {
+    font-size: 17px;
+    line-height: 40px;
+  }
+  .proximos_eventos_area .card p {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .proximos_eventos_area .card h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .header_and_hero .hero_main_area .hero_content h1 {
+    font-size: 25px;
+    line-height: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
