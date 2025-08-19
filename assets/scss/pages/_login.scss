@@ -1,112 +1,186 @@
 @import "../utils/variable";
 
 .login_wrapper {
-  background: url(../images/login_bg.png) center/cover;
-  min-height: 100vh;
+    background: url(../images/login_bg.png) center/cover;
+    min-height: 100vh;
 
-  .header {
-    margin-top: 63px;
-    height: 73px;
-    width: 277px;
-  }
+    .header {
+        margin-top: 63px;
+        height: 73px;
+        width: 277px;
+    }
 
-  h1 {
-    font-family: $helvetica;
-    color: #e29b1b;
-    font-weight: 600;
-    font-size: 65px;
-    margin-top: 78px;
-    margin-bottom: 52px;
-  }
-  .authForm {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+    h1 {
+        font-family: $helvetica;
+        color: #e29b1b;
+        font-weight: 600;
+        font-size: 65px;
+        margin-top: 78px;
+        margin-bottom: 52px;
+    }
 
-  .spectacledcoder-input {
-    position: relative;
-    margin-bottom: 53px;
-  }
+    .authForm {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-  .spectacledcoder-input .d-label {
-    position: absolute;
-    left: 60px;
-    top: 55px;
-    letter-spacing: 5.63px;
-    color: #F7F7F7;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 35px;
-    font-family: $helvetica;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    background-color: transparent;
-    padding: 0 5px;
-    z-index: 1;
-  }
+    .spectacledcoder-input {
+        position: relative;
+        margin-bottom: 53px;
+    }
 
-.spectacledcoder-input input {
-    width: 100%;
-    height: 147px;
-    padding: 0 20px;
-    outline: none;
-    border: none;
-    border-radius: 75px;
-    color: white;
-    background: rgba(255, 255, 255, 0.2); /* White with 40% opacity */
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    font-size: 25px;
-    font-family: $helvetica;
+    .spectacledcoder-input .d-label {
+        position: absolute;
+        left: 60px;
+        top: 55px;
+        letter-spacing: 5.63px;
+        color: #F7F7F7;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 35px;
+        font-family: $helvetica;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        background-color: transparent;
+        padding: 0 5px;
+        z-index: 1;
+    }
+
+    .spectacledcoder-input input {
+        width: 100%;
+        height: 147px;
+        padding: 0 20px;
+        outline: none;
+        border: none;
+        border-radius: 75px;
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+        /* White with 40% opacity */
+        backdrop-filter: blur(32px);
+        -webkit-backdrop-filter: blur(32px);
+        font-size: 25px;
+        font-family: $helvetica;
+    }
+
+    .spectacledcoder-input input:focus {
+        border-color: #e29b1b;
+    }
+
+    /* Floating label style */
+    .d-label.floating {
+        transform: translateY(-77px) scale(0.9);
+        font-size: 35px;
+        background-color: #ffffff21;
+        color: #e29b1b;
+        padding: 0 8px;
+        z-index: 10;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    .authForm input[type="submit"] {
+        display: block;
+        margin: 30px auto 0;
+        padding: 10px 30px;
+        background-color: #e29b1b;
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .authForm input[type="submit"]:hover {
+        background-color: #000;
+        color: #e29b1b;
+        box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
+    }
+
+    .authForm button {
+        font-family: $helvetica;
+        color: #ffffff;
+        border: 5px solid #ffffff;
+        border-radius: 31px;
+        height: 128px;
+        max-width: 354px;
+        width: 100%;
+        background: transparent;
+        font-size: 33px;
+        margin-top: 20px;
+    }
 }
 
-  .spectacledcoder-input input:focus {
-    border-color: #e29b1b;
+@media (max-width: 768px) {
+    .login_wrapper .spectacledcoder-input input {
+        height: 114px;
+    }
+
+    .login_wrapper .spectacledcoder-input .d-label {
+        top: 42px;
+        left: 20px;
+    }
+
+    .login_wrapper .d-label.floating {
+        transform: translateY(-55px) scale(0.9);
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login_wrapper {
+        background: url(../images/login_bg_formobile.png) center/cover;
+    }
+
+    .login_wrapper .spectacledcoder-input .d-label {
+        font-size: 15px;
+    }
+.login_wrapper .header {
+  margin-top: 41px;
+  height: 53px;
+  width: 222px;
+}
+   .login_wrapper .d-label.floating {
+    transform: translateY(-45px) scale(0.9);
   }
 
-  /* Floating label style */
-  .d-label.floating {
-    transform: translateY(-77px) scale(0.9);
-    font-size: 35px;
-    background-color: #ffffff21;
-    color: #e29b1b;
-    padding: 0 8px;
-    z-index: 10;
-    margin-left: 10px;
-    border-radius: 5px;
-  }
+    .login_wrapper .authForm button {
+        font-size: 18px;
+        height: 90px;
+    }
 
-  .authForm input[type="submit"] {
-    display: block;
-    margin: 30px auto 0;
-    padding: 10px 30px;
-    background-color: #e29b1b;
-    color: #000;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+    .login_wrapper .spectacledcoder-input input {
+        height: 90px;
+    }
 
-  .authForm input[type="submit"]:hover {
-    background-color: #000;
-    color: #e29b1b;
-    box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
+    .login_wrapper .spectacledcoder-input .d-label {
+        top: 38px;
+        left: 20px;
+    }
+
+    .login_wrapper h1 {
+        font-size: 38px;
+        margin-top: 61px;
+        margin-bottom: 31px;
+    }
+
+}
+@media (max-width: 376px) {
+  .login_wrapper .spectacledcoder-input input {
+    height: 70px;
   }
-  .authForm button{
-    font-family: $helvetica;
-    color: #ffffff;
-    border: 5px solid #ffffff;
-    border-radius: 31px;
-    height: 128px;
-    max-width: 354px;
-    width: 100%;
-    background: transparent;
-    font-size: 33px;
-    margin-top: 20px;
+   .login_wrapper .spectacledcoder-input .d-label {
+    font-size: 13px;
+    top: 28px;
+  }
+    .login_wrapper .authForm button {
+    font-size: 24px;
+    height: 93px;
+  }
+    .login_wrapper .d-label.floating {
+    transform: translateY(-34px) scale(0.9);
   }
 }
