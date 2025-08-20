@@ -440,7 +440,7 @@ a {
   font-size: 30px;
   line-height: 40px;
   color: #000000;
-  font-weight: 300;
+  font-weight: 400;
 }
 .proximos_eventos_area .card {
   height: 773px;
@@ -475,7 +475,7 @@ a {
   font-size: 40px;
   line-height: 55px;
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   text-transform: capitalize;
 }
@@ -516,7 +516,7 @@ a {
   font-size: 30px;
   text-align: center;
   color: #000000;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 23px;
 }
 .proximos_eventos_area .cart_footer .statuscomplete p {
@@ -936,6 +936,13 @@ a {
   .header_and_hero h2 {
     font-weight: 300;
     font-size: 14px;
+  }
+  .proximos_eventos_area .de_cart {
+    background: url(../images/deactiveCartbg.png) no-repeat center/cover;
+  }
+  .header_and_hero .hero_main_area .hero_content h1 {
+    letter-spacing: 8px;
+    font-weight: 700;
   }
 }
 @media (max-width: 376px) {
