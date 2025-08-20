@@ -297,10 +297,25 @@
     font-weight: 300 !important;
     font-style: italic !important;
   }
+  .v1herotitleformobile{
+    color: #ffffff !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    font-size: 40px !important;
+    letter-spacing: 8.04px !important;
+  }
+  .header_and_hero h2{
+    font-weight: 300;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 376px) {
   .validar_curso h1 {
     font-size: 30px;
+  }
+    .v1herotitleformobile{
+    font-size: 34px !important;
+    letter-spacing: 8.04px !important;
   }
 }
