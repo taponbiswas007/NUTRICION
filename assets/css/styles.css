@@ -96,7 +96,6 @@ a {
   font-size: 35px;
   font-family: "Helvetica Neue";
   pointer-events: none;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: transparent;
   padding: 0 5px;
@@ -121,8 +120,7 @@ a {
   border-color: #e29b1b;
 }
 .auth_wrapper .d-label.floating {
-  -webkit-transform: translateY(-77px) scale(0.9);
-          transform: translateY(-77px) scale(0.9);
+  transform: translateY(-77px) scale(0.9);
   font-size: 35px;
   background-color: rgba(255, 255, 255, 0.1294117647);
   color: #e29b1b;
@@ -142,14 +140,12 @@ a {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .auth_wrapper .authForm input[type=submit]:hover {
   background-color: #000;
   color: #e29b1b;
-  -webkit-box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
-          box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
+  box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
 }
 .auth_wrapper .authForm button {
   font-family: "Helvetica Neue";
@@ -173,8 +169,7 @@ a {
     left: 20px;
   }
   .auth_wrapper .d-label.floating {
-    -webkit-transform: translateY(-55px) scale(0.9);
-            transform: translateY(-55px) scale(0.9);
+    transform: translateY(-55px) scale(0.9);
     font-size: 24px;
   }
 }
@@ -191,8 +186,7 @@ a {
     width: 222px;
   }
   .auth_wrapper .d-label.floating {
-    -webkit-transform: translateY(-45px) scale(0.9);
-            transform: translateY(-45px) scale(0.9);
+    transform: translateY(-45px) scale(0.9);
   }
   .auth_wrapper .authForm button {
     font-size: 18px;
@@ -227,8 +221,7 @@ a {
     height: 93px;
   }
   .auth_wrapper .d-label.floating {
-    -webkit-transform: translateY(-34px) scale(0.9);
-            transform: translateY(-34px) scale(0.9);
+    transform: translateY(-34px) scale(0.9);
   }
 }
 .authConfirm_wrapper {
@@ -410,23 +403,17 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 110px;
   width: 110px;
   background: rgba(255, 255, 255, 0.0823529412);
   border-radius: 50%;
-  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .header_and_hero .hero_main_area .video_play_area .videoPlaybtn .triangle {
   display: block;
@@ -459,19 +446,10 @@ a {
   height: 773px;
   background: url(../images/card_bg.png) no-repeat center/cover;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: 100px 5%;
   overflow: hidden;
   border-radius: 20px;
@@ -505,7 +483,6 @@ a {
   position: absolute !important;
   top: 0;
   right: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background: #ffffff;
@@ -605,19 +582,10 @@ a {
   width: 100%;
   height: 255px;
   margin-top: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   row-gap: 30px;
 }
 .footer img {
@@ -722,14 +690,27 @@ a {
   width: 100%;
   padding-bottom: 20px;
 }
-.interior_header_and_hero .hero_main_area .video_play_area {
+.interior_header_and_hero .hero_main_area .interioVideoplayer {
   position: relative;
-  height: 459px;
+  height: 691px;
+  max-width: 1228px;
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
 }
-.interior_header_and_hero .hero_main_area .video_play_area img {
+.interior_header_and_hero .hero_main_area .interioVideoplayer .herovideoTitle {
+  font-family: "Helvetica Neue";
+  color: #e29b1b;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 72px;
+  right: 19%;
+  z-index: 2;
+}
+.interior_header_and_hero .hero_main_area .interioVideoplayer img {
   position: absolute;
   top: 0;
   left: 0;
@@ -740,29 +721,23 @@ a {
   -o-object-position: center;
      object-position: center;
 }
-.interior_header_and_hero .hero_main_area .video_play_area .videoPlaybtn {
+.interior_header_and_hero .hero_main_area .interioVideoplayer .videoPlaybtn {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 110px;
   width: 110px;
   background: rgba(255, 255, 255, 0.0823529412);
   border-radius: 50%;
-  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.interior_header_and_hero .hero_main_area .video_play_area .videoPlaybtn .triangle {
+.interior_header_and_hero .hero_main_area .interioVideoplayer .videoPlaybtn .triangle {
   display: block;
   width: 45px;
   height: 52px;
@@ -770,13 +745,13 @@ a {
   background: #ffffff;
   border-radius: 5px;
 }
-.interior_header_and_hero .hero_main_area .video_play_area .modal-header {
+.interior_header_and_hero .hero_main_area .interioVideoplayer .modal-header {
   background: #d78e00 !important;
   border-bottom: 0;
 }
 
 .validar_curso {
-  background: #3b1970;
+  background: url(../images/validarBg.png) center/cover;
   padding: 45px 0;
 }
 .validar_curso h1 {
@@ -801,12 +776,8 @@ a {
   width: 100%;
 }
 .validar_curso .validar_curso_item .custom-radio {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -827,13 +798,11 @@ a {
   border: 2px solid #ffffff;
   border-radius: 50%;
   position: relative;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background: transparent;
 }
 .validar_curso .validar_curso_item .custom-radio:hover .radio-control {
-  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .validar_curso .validar_curso_item .custom-radio input[type=radio]:checked + .radio-control {
   background: transparent;
@@ -843,16 +812,14 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
   background: #ffffff;
   border-radius: 50%;
 }
 .validar_curso .validar_curso_item .custom-radio input[type=radio]:focus + .radio-control {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
-          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
 .validar_curso .validar_curso_item .custom-radio input[type=radio]:disabled + .radio-control {
   border-color: #666;
@@ -867,7 +834,8 @@ a {
   padding: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1294117647);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
   resize: none;
   border: none;
   color: #ffffff;
@@ -876,15 +844,9 @@ a {
 .interiorFooter {
   height: 175px;
   background: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #707070;
 }
 .interiorFooter h1 {
@@ -895,4 +857,78 @@ a {
   text-transform: uppercase;
   margin-bottom: 0;
   font-weight: 600;
+}
+
+.interiorSessionformobile {
+  background: url(../images/interiorhero_sessionthem_for_mobile.png) center/cover;
+  height: 242px;
+  margin-top: 71px;
+  margin-bottom: 47px;
+}
+.interiorSessionformobile img {
+  max-width: 336px;
+  width: 100%;
+  height: 203px !important;
+  position: unset !important;
+}
+
+.in_mobile_hero_content p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: 400;
+  max-width: 819px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .interior_header_and_hero .hero_main_area .interioVideoplayer {
+    height: 450px;
+  }
+  .interior_header_and_hero .hero_main_area .interioVideoplayer .herovideoTitle {
+    font-size: 40px;
+    top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .interior_header_and_hero .hero_main_area .interioVideoplayer {
+    height: 364px;
+  }
+  .interior_header_and_hero .hero_main_area .interioVideoplayer .herovideoTitle {
+    font-size: 35px;
+    top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .interior_header_and_hero {
+    background: url(../images/mobile_hero_bg.png) center/cover;
+  }
+  .validar_curso .validar_curso_item textarea {
+    width: 100%;
+  }
+  .validar_curso .validar_curso_item p {
+    font-size: 16px;
+  }
+  .interiorFooter h1 {
+    font-size: 33px;
+  }
+  .proximos_eventos_area .card {
+    background: url(../images/mobileCard_bg.png) no-repeat center/cover;
+  }
+  .proximos_eventos_area .card .card_effect {
+    display: none;
+  }
+  .allcompleteherotitleformobile {
+    color: #ffffff !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+  }
+}
+@media (max-width: 376px) {
+  .validar_curso h1 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */
