@@ -145,6 +145,26 @@
             text-align: center;
             text-transform: capitalize;
         }
+           .v2status{
+            position: absolute !important;
+            top: 0;
+            right: 0;
+            width: fit-content;
+            background: #ffffff;
+            border-bottom-left-radius: 50px;
+            padding: 3px 40px;
+              p {
+                font-size: 18px;
+                color: #000000;
+                margin: 0;
+            }
+
+            span {
+                height: 14px;
+                width: 14px;
+                display: block;
+            }
+        }
     }
 
     .de_cart {
@@ -226,6 +246,7 @@
                 display: block;
             }
         }
+     
 
     }
 
@@ -241,7 +262,13 @@
         }
     }
 }
-
+.downloadBtn{
+    font-size: 23px;
+    padding: 15px 20px;
+    border: 1px solid #1F2A62;
+border-radius: 38px;
+background: transparent;
+}
 .footer {
     background: url(../images/footer_bg.png) no-repeat center/cover;
     width: 100%;
