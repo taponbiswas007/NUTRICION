@@ -693,4 +693,84 @@ a {
     font-size: 25px;
     line-height: 40px;
   }
+}
+.interior_header_and_hero {
+  background: url(../images/interior_hero_bg.png) center/cover;
+  min-height: 100vh;
+}
+.interior_header_and_hero .logo {
+  width: 109px;
+  display: block;
+}
+.interior_header_and_hero h2 {
+  color: #F7F7F7;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.interior_header_and_hero .hero_main_area {
+  margin-top: 91px;
+}
+.interior_header_and_hero .hero_main_area .hero_content p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: 400;
+  max-width: 819px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.interior_header_and_hero .hero_main_area .video_play_area {
+  position: relative;
+  height: 459px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.interior_header_and_hero .hero_main_area .video_play_area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+.interior_header_and_hero .hero_main_area .video_play_area .videoPlaybtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 110px;
+  width: 110px;
+  background: rgba(255, 255, 255, 0.0823529412);
+  border-radius: 50%;
+  backdrop-filter: blur(32px);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.interior_header_and_hero .hero_main_area .video_play_area .videoPlaybtn .triangle {
+  display: block;
+  width: 45px;
+  height: 52px;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.interior_header_and_hero .hero_main_area .video_play_area .modal-header {
+  background: #D78E00 !important;
+  border-bottom: 0;
 }/*# sourceMappingURL=styles.css.map */

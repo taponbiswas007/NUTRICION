@@ -1,0 +1,85 @@
+
+.interior_header_and_hero {
+     background: url(../images/interior_hero_bg.png) center/cover;
+    min-height: 100vh;
+
+    .logo {
+        width: 109px;
+        display: block;
+    }
+
+    h2 {
+        color: #F7F7F7;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    .hero_main_area {
+        margin-top: 91px;
+
+        .hero_content {
+    
+            p {
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 34px;
+                text-align: left;
+                margin: 0 auto;
+                font-weight: 400;
+                max-width: 819px;
+                width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+
+        .video_play_area {
+            position: relative;
+            height: 459px;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+                object-position: center;
+            }
+
+            .videoPlaybtn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 110px;
+                width: 110px;
+                background: #ffffff15;
+                border-radius: 50%;
+                backdrop-filter: blur(32px);
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .triangle {
+                    display: block;
+                    width: 45px;
+                    height: 52px;
+                    clip-path: polygon(100% 50%, 0 0, 0 100%);
+                    background: #FFFFFF;
+                    border-radius: 5px;
+                }
+            }
+
+            .modal-header {
+                background: #D78E00 !important;
+                border-bottom: 0;
+            }
+        }
+    }
+
+}
